@@ -1,0 +1,285 @@
+/* ================= WRAPPER ================= */
+.shop-wrapper {
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* ================= TITLE ================= */
+.shop-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* ================= FILTER BAR ================= */
+.filter-bar {
+  margin-bottom: 20px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 44px;
+  padding: 0 12px;
+  width: 100%;
+  background: #fff;
+}
+
+/* ================= CARD ================= */
+.shop-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  transition: 0.25s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* ================= IMAGE ================= */
+.img-wrap {
+  background: #fff;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-wrap img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+/* ================= BODY ================= */
+.card-body-custom {
+  text-align: center;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* TITLE FIX (equal height) */
+.title-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 40px;
+  line-height: 1.3;
+}
+
+/* ================= PRICE ================= */
+.price {
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.new-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.old-price {
+  margin-left: 6px;
+  text-decoration: line-through;
+  color: #777;
+  font-size: 13px;
+}
+
+.off-badge {
+  margin-left: 6px;
+  border: 1px solid #000;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ================= QTY ================= */
+.qty-box {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.qty-box button {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+  min-width: 30px;
+  height: 30px;
+}
+
+/* ================= BUTTON ================= */
+.add-btn {
+  width: 100%;
+  background: #000 !important;
+  color: #fff !important;
+  border-radius: 22px;
+  border: 1px solid #000 !important;
+  height: 40px;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.add-btn:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+/* ===================================================== */
+/* ================= GRID SPACING FIX ================= */
+/* ===================================================== */
+.shop-wrapper .row {
+  --bs-gutter-x: 18px;
+  --bs-gutter-y: 18px;
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+
+  /* tighter card body */
+  .card-body-custom {
+    padding: 12px;
+  }
+
+  .title-link {
+    font-size: 15px;
+    min-height: 38px;
+  }
+
+  .price {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 6px;
+  }
+
+  .off-badge {
+    font-size: 10px;
+    padding: 1px 5px;
+    white-space: nowrap;
+  }
+
+  .qty-box {
+    margin-bottom: 8px;
+    gap: 6px;
+  }
+
+  .qty-box button {
+    height: 28px;
+    min-width: 28px;
+  }
+
+  .add-btn {
+    height: 36px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  .img-wrap img {
+    height: 150px;
+  }
+
+}
+/* ===================================================== */
+/* ================= MOBILE PERFECT ================= */
+/* ===================================================== */
+@media (max-width: 576px) {
+
+  /* wrapper compact */
+  .shop-wrapper {
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* title */
+  .shop-title {
+    margin-bottom: 18px;
+    font-size: 20px;
+  }
+
+  /* FILTERS tighter */
+  .filter-bar {
+    margin-bottom: 12px !important;
+  }
+
+  .filter-bar .row > div {
+    margin-bottom: 10px;
+  }
+
+  .filter-bar input,
+  .filter-bar select {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .shop-wrapper .row {
+    --bs-gutter-x: 10px;
+    --bs-gutter-y: 12px;
+  }
+
+  /* CARD */
+  .shop-card {
+    border-radius: 12px;
+  }
+
+  .img-wrap {
+    padding: 12px;
+  }
+
+  .img-wrap img {
+    height: 130px;
+  }
+
+  .card-body-custom {
+    padding: 10px;
+  }
+
+  .title-link {
+    font-size: 13px;
+    min-height: 34px;
+  }
+
+  .price {
+    margin-bottom: 6px;
+  }
+
+  .new-price {
+    font-size: 14px;
+  }
+
+  .old-price {
+    font-size: 12px;
+  }
+
+  .off-badge {
+    font-size: 10px;
+    padding: 1px 5px;
+  }
+
+  .qty-box button {
+    height: 26px;
+    min-width: 26px;
+  }
+
+  .add-btn {
+    height: 34px;
+    font-size: 13px;
+  }
+
+}

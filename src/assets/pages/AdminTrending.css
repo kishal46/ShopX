@@ -1,0 +1,67 @@
+.admin-trending {
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.title {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.add-bar {
+  display: flex;
+  gap: 12px;
+  max-width: 500px;
+  margin-bottom: 35px;
+}
+
+.add-btn {
+  background: #000;
+  border-radius: 10px;
+  padding: 10px 18px;
+}
+
+.trending-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.trend-card {
+  border-radius: 18px;
+  border: none;
+  overflow: hidden;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(8px);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.trend-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.img-wrap {
+  position: relative;
+  height: 160px;
+}
+
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trend-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 10px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}

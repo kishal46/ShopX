@@ -1,0 +1,127 @@
+/* ================= WRAPPER ================= */
+.hero-wrapper.container-style {
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 0 40px;
+}
+
+/* ================= SLIDE BOX ================= */
+.hero-slide {
+  height: 380px;
+  border-radius: 24px;
+
+  /* ⭐ PERFECT IMAGE FIT */
+  background-repeat: no-repeat;
+  background-position: center right;   /* keep model on right */
+  background-size: cover;              /* fill banner perfectly */
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  overflow: hidden;
+}
+
+/* ⭐ DARK OVERLAY FOR TEXT VISIBILITY */
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.25),
+    transparent
+  );
+}
+
+/* ================= CONTENT ================= */
+.hero-content {
+  position: relative;
+  color: #fff;
+  max-width: 520px;
+  z-index: 2;
+}
+
+.hero-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(6px);
+}
+
+/* TITLE */
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* SUBTITLE */
+.hero-content p {
+  margin: 12px 0;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* BUTTON */
+.hero-content button {
+  background: white;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.hero-content button:hover {
+  transform: translateY(-2px);
+}
+
+/* ================= CAROUSEL ARROWS ================= */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* ================= DOT INDICATORS ================= */
+.carousel-indicators [data-bs-target] {
+  background-color: white;
+  width: 20px;
+  height: 4px;
+  border-radius: 4px;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .hero-wrapper.container-style {
+    padding: 0 15px;
+  }
+
+  .hero-slide {
+    height: 260px;
+    padding-left: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero-content button {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}

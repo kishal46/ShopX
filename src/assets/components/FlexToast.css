@@ -1,0 +1,23 @@
+.flexToast {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 20px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 2000;
+  animation: fadeIn .25s ease-out;
+  box-shadow: 0 8px 22px rgba(0,0,0,.32);
+}
+
+.flexToast-success { background: #0b8d44; }     /* green */
+.flexToast-error { background: #d50000; }       /* red */
+.flexToast-warn { background: #e8a100; }        /* yellow/orange */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -18px); }
+  to { opacity: 1; transform: translate(-50%, 0px); }
+}

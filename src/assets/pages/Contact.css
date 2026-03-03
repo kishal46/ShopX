@@ -1,0 +1,34 @@
+.contact-page{
+  background:#f6f7fb;
+  min-height:100vh;
+}
+
+.contact-card{
+  border-radius:18px;
+  padding:20px;
+}
+
+.contact-input{
+  height:48px;
+  border-radius:10px !important;
+  border:1px solid #e2e2e2 !important;
+}
+
+.contact-input:focus{
+  box-shadow:none !important;
+  border-color:#111 !important;
+}
+
+.contact-btn{
+  height:50px;
+  border-radius:12px;
+  background:linear-gradient(90deg,#111,#333);
+  border:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.contact-btn:hover{
+  transform:translateY(-2px);
+  background:linear-gradient(90deg,#000,#111);
+}

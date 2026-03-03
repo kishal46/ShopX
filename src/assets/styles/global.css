@@ -1,0 +1,58 @@
+/* 🌞 Light Theme */
+.theme-light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.theme-light input,
+.theme-light button,
+.theme-light select,
+.theme-light .card,
+.theme-light form {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #e5e5e5;
+}
+
+.theme-light .navbar,
+.theme-light footer {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* 🌙 Dark Theme */
+.theme-dark {
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+.theme-dark input,
+.theme-dark button,
+.theme-dark select,
+.theme-dark .card,
+.theme-dark form {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #333333;
+}
+
+.theme-dark .navbar,
+.theme-dark footer {
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  border-radius: 50%;
+  padding: 6px 10px;
+  background: none;
+  border: 1px solid #999999;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background-color: #999999;
+  color: #0f0f0f;
+}

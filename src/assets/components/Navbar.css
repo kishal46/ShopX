@@ -1,0 +1,104 @@
+/* ==========================================================
+   NAVBAR BASE
+========================================================== */
+.main-navbar {
+  background: #ffffff !important;
+  border-bottom: 1px solid #000;
+  padding: 12px 0;
+}
+
+/* ==========================================================
+   NAV LINKS (clean underline design)
+========================================================== */
+.navbar-links .nav-link {
+  color: #000 !important;
+  font-weight: 500;
+  padding: 10px 8px !important;
+  margin: 0 12px;
+  border-radius: 0; /* no rounded */
+  transition: all 0.25s ease;
+}
+
+/* Hover underline */
+.navbar-links .nav-link:hover {
+  background: none !important;
+  color: #000 !important;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+/* ACTIVE underline */
+.navbar-links .nav-link.active {
+  background: none !important;
+  color: #000 !important;
+  font-weight: 700 !important;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+/* ==========================================================
+   CART COUNT BADGE
+========================================================== */
+.cart-pill {
+  background: #000;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  margin-left: 4px;
+}
+
+/* ==========================================================
+   DROPDOWN MENU
+========================================================== */
+.dropdown-menu {
+  background: #fff !important;
+  border: 1px solid #000 !important;
+  border-radius: 0;
+}
+
+.dropdown-item {
+  color: #000 !important;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+/* Remove blue active states */
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-toggle:focus,
+.nav-link:focus {
+  background: none !important;
+  color: #000 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* ==========================================================
+   MOBILE MENU
+========================================================== */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background: #fff !important;
+    border-bottom: 1px solid #000;
+    padding: 12px 10px;
+  }
+
+  .navbar-links {
+    width: 100%;
+    text-align: right !important;
+  }
+
+  .navbar-links .nav-link {
+    width: 100%;
+    text-align: right !important;
+    margin: 10px 0;
+    padding: 12px 10px !important;
+  }
+}

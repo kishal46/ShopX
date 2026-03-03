@@ -1,0 +1,141 @@
+/* === Auth Container === */
+.auth-container {
+  max-width: 400px;
+  padding: 30px 30px;
+  margin: 20px auto;
+  border-radius: 12px;
+  background: var(--bs-body-bg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* === Auth Form === */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: transparent;
+}
+
+/* === Form Controls === */
+.auth-form .form-control {
+  width: 100%;
+  border-radius: 10px;
+  padding: 12px 14px;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  color: #333;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.auth-form .form-control:focus {
+  border-color: #666;
+  box-shadow: 0 0 0 3px rgba(100, 100, 100, 0.1);
+  outline: none;
+}
+
+/* === Button Styling === */
+.auth-form .btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.auth-form .btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* === Auth Links === */
+.auth-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* === Dark Theme Support === */
+.theme-dark .auth-container {
+  background: #1e1e1e;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+.theme-dark .auth-form .form-control {
+  background-color: #2a2a2a;
+  border-color: #444;
+  color: #fff;
+}
+
+.theme-dark .auth-form .form-control:focus {
+  border-color: #888;
+  box-shadow: 0 0 0 3px rgba(200, 200, 200, 0.1);
+}
+
+.theme-dark .auth-link {
+  color: #fff;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 40px 20px;
+    margin: 40px auto;
+  }
+
+  .auth-form .btn {
+    width: 100%;
+  }
+}
+
+/* === Large Screens === */
+@media (min-width: 1400px) {
+  .auth-container {
+    max-width: 450px !important;
+    padding: 50px;
+  }
+}
+.auth-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form label {
+  font-weight: 500;
+}
+
+.auth-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 38px;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  opacity: 0.7;
+}
+
+.password-toggle:hover {
+  opacity: 1;
+}

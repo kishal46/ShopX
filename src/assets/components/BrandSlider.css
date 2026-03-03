@@ -1,0 +1,52 @@
+.brand-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 30px 0;
+  background: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.brand-marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.brand-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 22s linear infinite;
+}
+
+.brand-card {
+  min-width: 180px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-card img {
+  max-width: 140px;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+/* infinite smooth scroll */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* pause on hover */
+.brand-marquee:hover .brand-track {
+  animation-play-state: paused;
+}

@@ -1,0 +1,123 @@
+.product-page {
+  margin-top: 15px;
+}
+
+/* PRODUCT BOX */
+.product-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+}
+
+/* IMAGE AREA */
+.product-image-wrap {
+  background: linear-gradient(160deg,#f7f7f7,#ffffff);
+  padding: 35px;
+  border-radius: 20px;
+  text-align:center;
+  box-shadow: inset 0 0 12px rgba(0,0,0,0.04);
+}
+
+/* IMAGE */
+.product-img {
+  max-width: 85%;
+  border-radius: 18px;
+  transition: transform .45s ease;
+  filter: drop-shadow(0 25px 35px rgba(0,0,0,0.18));
+}
+
+.product-img:hover {
+  transform: scale(1.08);
+}
+
+/* INFO */
+.product-info {
+  padding-left: 30px;
+}
+
+.product-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* PRICE */
+.price-tag {
+  font-size: 30px;
+  font-weight: 800;
+  background: linear-gradient(90deg,#111,#444);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.price-tag .old {
+  margin-left: 14px;
+  font-size: 16px;
+  text-decoration: line-through;
+  opacity: .4;
+}
+
+/* DESC */
+.product-desc {
+  margin: 18px 0;
+  color: #666;
+}
+
+/* BUTTON */
+.buy-btn {
+  padding: 14px 32px;
+  border-radius: 35px;
+  background: #111;
+  border: none;
+}
+
+/* ===== SMALL SIMILAR PRODUCTS ===== */
+.section-title {
+  margin-top: 45px;
+  font-weight: 700;
+}
+
+.related-card-small {
+  border-radius: 12px;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.related-card-small:hover {
+  transform: translateY(-4px);
+}
+
+.rel-img-wrap {
+  background: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+}
+
+.rel-img-wrap img {
+  height: 110px;
+  object-fit: contain;
+}
+
+.rel-title {
+  display: block;
+  font-size: 12px;
+  line-height: 1.2;
+  height: 30px;
+  overflow: hidden;
+}
+
+.rel-price {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .product-info{
+    padding-left:0;
+    margin-top:20px;
+  }
+}

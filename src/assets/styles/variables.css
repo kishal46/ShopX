@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  padding-top: 90px;
+  min-height: 80vh;
+}
+
+footer {
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+footer:hover {
+  opacity: 1;
+}

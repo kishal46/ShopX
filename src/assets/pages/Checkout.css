@@ -1,0 +1,65 @@
+.checkout-wrapper{
+  padding-top:30px;
+}
+
+.checkout-title{
+  text-align:center;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.checkout-form{
+  max-width:600px;
+  margin:auto;
+}
+
+.input-black{
+  border:1px solid #000 !important;
+  border-radius:8px;
+  height:44px;
+}
+
+/* BLACK BUTTON */
+.black-btn{
+  background:#000 !important;
+  color:#fff !important;
+  border:1px solid #000 !important;
+  height:44px;
+  border-radius:25px;
+  font-weight:600;
+}
+
+.black-btn:hover{
+  background:#fff !important;
+  color:#000 !important;
+}
+
+/* OTP */
+.otp-title{
+  margin-top:20px;
+  font-weight:600;
+  text-align:center;
+}
+
+.otp-box-wrap{
+  display:flex;
+  justify-content:center;
+  gap:8px;
+  margin-top:10px;
+}
+
+.otp-input{
+  width:42px;
+  height:52px;
+  border:2px solid #000;
+  border-radius:8px;
+  text-align:center;
+  font-size:22px;
+  font-weight:700;
+}
+
+.total-text{
+  text-align:center;
+  margin:15px 0;
+  font-weight:700;
+}
