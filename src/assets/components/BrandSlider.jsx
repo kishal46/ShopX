@@ -8,7 +8,7 @@ const brands = [
   { name: "H&M", img: "https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" },
   { name: "Levi's", img: "https://e7.pngegg.com/pngimages/269/82/png-clipart-logo-levi-strauss-co-brand-jeans-jeans-text-label.png" },
   { name: "Gucci", img: "https://i.pinimg.com/564x/d4/a0/09/d4a009e8bf35eaff5c498a2dab6392b8.jpg" },
-  { name: "Reebok", img: "https://logos-world.net/wp-content/uploads/2020/04/Reebok-Logo.png" },
+  { name: "Reebok", img: "https://1000logos.net/wp-content/uploads/2017/05/Reebok-logo.jpg" },
   { name: "Under Armour ", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAiemJT06IuEqAVvW24tQd4vGybRjvT_v22Q&s" },
   { name: "Uniqlo", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStW_pjJEzmmxSmqP1r5le-exJZ_e36cG2WVA&s" },
 ];
