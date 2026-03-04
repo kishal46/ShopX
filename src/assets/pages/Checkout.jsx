@@ -109,7 +109,16 @@ const Checkout = () => {
         address
       };
 
-      const res = await axios.post(`${API}/api/orders`, payload);
+      console.log("API:", API);
+      console.log("ORDER PAYLOAD:", payload);
+
+      const res = await axios.post(
+        `${API}/api/orders`,
+        payload,
+        { headers: { "Content-Type": "application/json" } }
+      );
+
+      console.log("ORDER RESPONSE:", res.data);
 
       if(res.data?.success){
 
@@ -118,11 +127,20 @@ const Checkout = () => {
         toast.success("OTP sent!");
 
       }else{
+
         toast.error(res.data?.message || "Order failed");
+
       }
 
     }catch(err){
-      toast.error("Failed to create order");
+
+      console.log("ORDER ERROR:", err?.response?.data || err.message);
+
+      toast.error(
+        err?.response?.data?.message ||
+        "Failed to create order"
+      );
+
     }
     finally{
       setLoading(false);
@@ -130,7 +148,7 @@ const Checkout = () => {
   };
 
   // ==========================
-  // VERIFY OTP (🔥 UNIVERSAL FIX)
+  // VERIFY OTP
   // ==========================
   const verifyOtp = async () => {
 
@@ -147,30 +165,34 @@ const Checkout = () => {
 
       const res = await axios.post(
         `${API}/api/orders/${orderId}/verify-checkout`,
-        { otp: finalOtp }
+        { otp: finalOtp },
+        { headers: { "Content-Type": "application/json" } }
       );
 
       console.log("VERIFY RESPONSE:", res.data);
 
-      // ⭐ WORKS FOR ANY BACKEND RESPONSE
-      if(res.data?.success === true){
+      if(res.data?.success){
 
         toast.success("Order Confirmed!");
         localStorage.removeItem("cart");
-        window.location.href="/orders";
+
+        setTimeout(()=>{
+          window.location.href="/orders";
+        },1000);
 
       }else{
 
-        toast.error(res.data?.message || "❌ Wrong OTP");
+        toast.error(res.data?.message || "Wrong OTP");
+
       }
 
     }catch(err){
 
-      console.log("VERIFY ERROR:", err?.response?.data);
+      console.log("VERIFY ERROR:", err?.response?.data || err.message);
 
       toast.error(
         err?.response?.data?.message ||
-        "❌ Invalid OTP"
+        "Invalid OTP"
       );
 
     }finally{
@@ -184,8 +206,8 @@ const Checkout = () => {
   return(
     <Container className="py-4">
 
+      <PageTopBar/>
 
-    <PageTopBar/>
       <h2 className="text-center mb-3">Checkout</h2>
 
       <Form style={{maxWidth:600}} className="mx-auto">
@@ -266,6 +288,7 @@ const Checkout = () => {
         )}
 
       </Form>
+
     </Container>
   );
 };
