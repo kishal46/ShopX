@@ -108,8 +108,6 @@ const Checkout = () => {
         total,
         address
       };
-
-      console.log("API:", API);
       console.log("ORDER PAYLOAD:", payload);
 
       const res = await axios.post(
